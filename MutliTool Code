@@ -1,0 +1,1106 @@
+@echo off
+cls
+:login
+title Mai San Mutli Tool // User: %USERNAME%  //  Time: %TIME%  //  Date: %DATE%
+cls
+echo [40;35mPlease login!
+set /p login=Username: 
+ 
+if %login%==root goto pass
+if %login%==mai goto pass
+if %login%==Mai goto pass
+if %login%==Lunaa goto pass
+if not %login%==root goto e
+if not %login%==mai goto e
+ 
+:pass
+set /p pass=Password: 
+ 
+if %pass%==san goto Main
+if %pass%==root goto Main
+if not %pass%==root goto login
+if not %pass%==san goto login
+ 
+:e
+cls
+echo [40;35mWrong username!
+ping localhost -n 5 >nul
+goto exit
+ 
+ 
+:exit
+exit
+
+
+@echo off
+:Main
+color B
+title Mai San MultiTool / Logged in as [%login%]
+:menu
+cls
+color B
+echo.
+echo Mai San MultiTool
+echo.
+echo [40;35m __    __     ______     __        ______     ______     __   __       
+echo [40;35m/\ "-./  \   /\  __ \   /\ \      /\  ___\   /\  __ \   /\ "-.\ \      
+echo [40;35m\ \ \-./\ \  \ \  __ \  \ \ \     \ \___  \  \ \  __ \  \ \ \-.  \     
+echo [40;35m \ \_\ \ \_\  \ \_\ \_\  \ \_\     \/\_____\  \ \_\ \_\  \ \_\\"\_\    
+echo  [40;35m \/_/  \/_/   \/_/\/_/   \/_/      \/_____/   \/_/\/_/   \/_/ \/_/  
+echo.
+echo help - contact info
+echo 1 Doxbin
+echo 2 Dox template 
+echo 3 Dox Tool (Built in)
+echo 4 DDos Tool (Built in)
+echo 5 Pinger 
+echo 6 IP Lookup
+echo 7 Fake Person Generator 
+echo 8 puTTy
+echo 9 Bat to Exe
+echo 10 Discord Selfbot - Open Code
+echo 11 Text Art
+echo 12 Patorjk
+echo 13 CyberHub
+echo 14 VedBex
+echo 15 Wannabe1337
+echo 16 Virustotal
+echo 17 Pastebin
+echo 18 Page 2
+set /p ans="[40;33mMaiSan@Enter Choice:"
+
+if %ans%==1 (
+goto a
+)
+if %ans%==2 (
+goto b
+)
+if %ans%==3 (
+goto c
+)
+if %ans%==4 (
+goto d
+)
+if %ans%==5 (
+goto e
+)
+if %ans%==6 (
+goto f
+)
+if %ans%==7 (
+goto g
+)
+if %ans%==8 (
+goto h
+)
+if %ans%==9 (
+goto i
+)
+if %ans%==10 (
+goto j
+)
+if %ans%==11 (
+goto k
+)
+if %ans%==12 (
+goto l
+)
+if %ans%==13 (
+goto m
+)
+if %ans%==14 (
+goto n
+)
+if %ans%==15 (
+goto o
+)
+if %ans%==16 (
+goto p
+)
+if %ans%==17 (
+goto q
+)
+if %ans%==help (
+goto :help
+)
+if %ans%==18 (
+goto :Page 2
+)
+:a
+cls
+start https://doxbin.org/
+pause
+cls
+goto menu
+:b
+cls
+start Doxtemplate.txt
+pause
+cls
+goto menu
+:c
+cls
+goto doxtool
+pause
+cls
+goto menu
+:d
+cls
+goto DDoss
+pause
+cls
+goto menu
+:e
+cls
+goto Pinger
+pause
+cls
+goto menu
+:f
+cls
+goto IPLook
+pause
+cls
+goto menu
+:g
+cls
+start https://www.fakepersongenerator.com/
+pause
+cls
+goto menu
+:h
+cls
+start PuTTy.exe
+pause
+cls
+goto menu
+:i
+cls
+start bat.exe 
+pause
+cls
+goto menu
+:j
+cls
+start Discord_sb.txt
+pause
+cls
+goto menu
+:k
+cls 
+start https://www.asciiart.eu/ascii-one-line
+pause
+cls
+goto menu
+:l
+cls
+start http://patorjk.com/software/taag/#p=display&f=Big%20Money-ne&t=Lulz%20Info%20
+pause
+cls
+goto menu
+:m
+cls
+start https://cyber-hub.pw/index.php
+pause
+cls
+goto menu
+:n
+cls
+start https://www.vedbex.com/tools/home
+pause
+cls
+goto menu
+:o
+cls
+start https://wannabe1337.xyz/
+pause
+cls
+goto menu
+:p
+cls
+start https://www.virustotal.com/
+pause
+cls
+goto menu
+:q
+cls 
+start https://pastebin.com/
+pause
+cls
+goto menu
+:Page 2
+@echo off
+chcp 65001
+cls
+color 4
+echo.
+echo ███╗   ███╗ █████╗ ██╗    ███████╗ █████╗ ███╗   ██╗    
+echo ████╗ ████║██╔══██╗██║    ██╔════╝██╔══██╗████╗  ██║    
+echo ██╔████╔██║███████║██║    ███████╗███████║██╔██╗ ██║    
+echo ██║╚██╔╝██║██╔══██║██║    ╚════██║██╔══██║██║╚██╗██║    
+echo ██║ ╚═╝ ██║██║  ██║██║    ███████║██║  ██║██║ ╚████║    
+echo ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝
+echo.
+echo 19 Ultrasec VPN
+echo 20 LunaVPN
+echo 21 Doxbin HOA
+echo 22 Lunaa's Dox Profile 
+echo 23 LightCord (Less CPU usage discord)
+echo 24 Octosniff
+echo 25 Disboard 
+echo 26 Discord Token Logger
+echo 27 BlueStacks (PC)
+echo 28 HappyMod (Android)
+echo 29 Discord PFP stealer
+echo 30 Discord Message Faker
+echo 31 Geo IP Lookup
+echo 32 IP Logger
+echo 33 DNS Lookup
+echo 34 Port List 
+echo 35 My IP
+echo 36 Page 1
+echo 37 Page 3
+set /p ans="[40;33mMaiSan@Enter Choice:"
+
+if %ans%==19 (
+goto r
+)
+if %ans%==20 (
+goto s
+)
+if %ans%==21 (
+goto t
+)
+if %ans%==22 (
+goto u
+)
+if %ans%==23 (
+goto v
+)
+if %ans%==24 (
+goto w
+)
+if %ans%==25 (
+goto x
+)
+if %ans%==26 (
+goto y
+)
+if %ans%==27 (
+goto z
+)
+if %ans%==28 (
+goto 1
+)
+if %ans%==29 (
+goto 2
+)
+if %ans%==30 (
+goto 3
+)
+if %ans%==31 (
+goto 4
+)
+if %ans%==32 (
+goto 5
+)
+if %ans%==33 (
+goto 6
+)
+if %ans%==34 ( 
+goto 7
+)
+if %ans%==35 (
+goto 8
+)
+if %ans%==36 (
+goto menu
+)
+if %ans%==37 (
+goto Pako
+)
+:r
+cls
+start Ultrasec.cf
+pause
+cls
+goto Page 2
+:s
+cls
+start https://lunanetwork.site.bm/
+pause
+cls
+goto Page 2
+:t
+cls
+start https://doxbin.org/hoa
+pause 
+cls
+goto Page 2
+:u
+cls
+start https://doxbin.org/user/Lunaa
+pause
+cls
+goto Page 2
+:v
+cls
+start https://github.com/Lightcord/Lightcord
+pause
+cls
+goto Page 2
+:w
+cls
+start https://octosniff.net/
+pause
+cls
+goto Page 2
+:x
+cls
+start https://disboard.org/
+pause
+cls
+goto Page 2
+:y
+cls
+start https://github.com/notkohlrexo/Discord-Token-Stealer
+pause
+cls
+goto Page 2
+:z
+cls
+start https://www.bluestacks.com/
+pause
+cls
+goto Page 2
+:1
+cls
+start https://www.happymod.com/
+pause
+cls
+goto Page 2
+:2
+cls
+start https://wannabe1337.xyz/discord-picturestealer
+pause
+cls
+goto Page 2
+:3
+cls
+start https://wannabe1337.xyz/discord-messagefaker
+pause
+cls
+goto Page 2
+:4
+cls
+start https://www.ultratools.com/tools/geoIp
+pause
+cls
+goto Page 2
+:5
+cls
+start IPLogger.exe
+pause
+cls
+goto Page 2
+:6
+cls
+start dns.exe
+pause
+cls
+goto Page 2
+:7
+cls
+start portlist.txt
+pause
+cls
+goto Page 2
+:8
+cls
+start MyIP.exe
+pause
+cls
+goto Page 2
+:Pako
+@echo off
+chcp 65001
+cls
+color D
+echo. 
+echo ****     ****           **        ********                         
+echo /**/**   **/**          //        **//////                          
+echo /**//** ** /**  ******   **      /**         ******   *******       
+echo /** //***  /** //////** /**      /********* //////** //**///**      
+echo /**  //*   /**  ******* /**      ////////**  *******  /**  /**      
+echo /**   /    /** **////** /**             /** **////**  /**  /**      
+echo /**        /**//********/**       ******** //******** ***  /**      
+echo //         //  //////// //       ////////   //////// ///   //
+echo.
+echo 38 Hidden BlueTooth Search 
+echo 39 UpTime
+echo 40 WebHook Gen Discord 
+echo 41 WiFi Password Finder
+echo 42 FBI.Gov Accounts 
+echo 43 Discord Token's
+echo 44 Mai San Hall of Skid's
+echo 45 SMS Bomber (IOS)
+echo 46 Prank Phone Call
+echo 47 Swatting News
+echo 48 Youtube Ethical Hacking Channel
+echo 49 Xresolver Ha Skid
+echo 50 PSNResolver ha script Kiddie
+echo 51 DoorDash Accounts 
+echo 52 leakDin Accounts 
+echo 53 MultiTool Source 
+echo 54 Back To Page 2
+echo 55 Exit Tool
+echo 56 Credits Page
+set /p ans="[40;33mMaiSan@Enter Choice:"
+
+if %ans%==38 (
+goto 9
+)
+if %ans%==39 (
+goto 10
+)
+if %ans%==40 (
+goto 11
+)
+if %ans%==41 (
+goto 12 
+)
+if %ans%==42 (
+goto 13
+)
+if %ans%==43 (
+goto 14
+)
+if %ans%==44 (
+goto 15
+)
+if %ans%==45 (
+goto 16
+)
+if %ans%==46 (
+goto 17
+)
+if %ans%==47 (
+goto 18
+)
+if %ans%==48 (
+goto 19 
+)
+if %ans%==49 (
+goto 20
+)
+if %ans%==50 (
+goto 21
+)
+if %ans%==51 (
+goto 22
+)
+if %ans%==52 (
+goto 23
+)
+if %ans%==53 (
+goto 24
+)
+if %ans%==54 (
+goto Page 2
+)
+if %ans%==55 (
+goto 25
+)
+if %ans%==56 (
+goto Credits
+)
+:9
+cls
+goto toothblue
+pause
+cls
+goto Pako
+:10
+cls
+echo  =============================================================
+echo  =20:22:18 up 5 min, 35 users, Load average: 2.61, 3.37, 1.56=
+echo  =============================================================
+pause
+cls
+goto Pako
+:11
+cls
+start https://discohook.org/?message=eyJtZXNzYWdlIjp7fX0
+pause
+cls
+goto Pako
+:12
+cls
+goto password
+pause
+cls
+goto Pako
+:13
+cls
+goto fbileak
+pause
+cls
+goto Pako
+:14
+cls
+start https://pastebin.com/3kFixZgE
+pause
+cls
+goto Pako
+:15
+cls
+start https://discord.gg/6HGXeB9HRr
+pause
+cls
+goto Pako
+:16
+cls
+start https://mytoolstown.com/smsbomber/#bestsmsbomber
+pause
+cls
+goto Pako
+:17
+cls
+start https://www.ownagepranks.com/
+pause
+cls
+goto Pako
+:18
+cls
+start https://www.google.com/search?q=swatting+news&oq=swatting+news&aqs=chrome..69i57.1587j0j1&sourceid=chrome&ie=UTF-8
+pause
+cls
+goto Pako
+:19
+cls
+start https://www.youtube.com/channel/UCmd5JklozyHqSlepN4Syrlw?view_as=subscriber
+pause
+cls
+goto Pako
+:20
+cls
+start https://xresolver.com/
+pause
+cls
+goto Pako
+:21
+cls
+start https://psnresolver.org/?__cf_chl_jschl_tk__=eb251c0a41fd3541b39f947d6195f31f1cd915e5-1605838603-0-Ab5H_XwT6jrBZQDxvQmlIv4h8ZWS6JYXDWtYWlAN7aykpy3YDXVgZR5sc0PksaI3Fk6fDBkO6qfVF9wAyR0_HmwAcnBroxxhmH6lahcCQZE0r3L6sFyCiMrUizAtTlSi1i8KCSW6g3_RdlQN0TTI7-Bux2kxJ2hy2PEgAn_qh5ulIIUFtdrDv4ThUsU6Yh3m0ScYGGQE7U9-bg1hy-Ee6-Mu97O-Ov75s3b1RGcCyjbDjDggVkdmCTokuQghUtfRfJ-3hbTDoBXWFAP6X3DWPFImXU_IExAc8Bd0dp2Fb7PaviHNMGu77eWyF-x4-SikRQ
+pause
+cls
+goto Pako
+:22
+cls
+start https://pastebin.com/cS3AxLRz
+pause
+cls
+goto Pako
+:23
+cls
+start https://pastebin.com/tN30Nq3Y
+pause
+cls
+goto Pako
+:24
+cls
+start https://www.youtube.com/watch?v=iik25wqIuFo
+pause
+cls
+goto Pako
+:25
+exit
+:Credits
+chcp 65001
+cls
+echo.
+echo.
+echo              Made by Lunaa#6423
+echo                   Thank you 
+echo ****     ****           **        ********                         
+echo /**/**   **/**          //        **//////                          
+echo /**//** ** /**  ******   **      /**         ******   *******       
+echo /** //***  /** //////** /**      /********* //////** //**///**      
+echo /**  //*   /**  ******* /**      ////////**  *******  /**  /**      
+echo /**   /    /** **////** /**             /** **////**  /**  /**      
+echo /**        /**//********/**       ******** //******** ***  /**      
+echo //         //  //////// //       ////////   //////// ///   // 
+echo.
+pause
+cls
+goto menu
+
+
+
+
+
+
+:DoxTool
+@echo off
+chcp 65001 >nul
+:again
+cls
+color 4
+title Mai San / [Beta]
+echo.
+echo. >nul
+echo Username : root
+echo password : root
+echo ·▄▄▄▄        ▐▄• ▄     ▄▄▄▄▄            ▄▄▌  
+echo ██▪ ██ ▪      █▌█▌▪    •██  ▪     ▪     ██•  
+echo ▐█· ▐█▌ ▄█▀▄  ·██·      ▐█.▪ ▄█▀▄  ▄█▀▄ ██▪  
+echo ██. ██ ▐█▌.▐▌▪▐█·█▌     ▐█▌·▐█▌.▐▌▐█▌.▐▌▐█▌▐▌
+echo ▀▀▀▀▀•  ▀█▄▀▪•▀▀ ▀▀     ▀▀▀  ▀█▄▀▪ ▀█▄▀▪.▀▀▀ 
+echo.
+set /p User=Enter Username:
+set /p Pass=Enter Password:
+if %user% == root if %Pass% == root goto good
+echo Wrong Login, Try Again..
+timeout 3
+goto again
+:good
+cls
+echo [40;35mPlease wait... logging in as Root [40;37m[[40;35mI[40;37m]
+echo [42;37m [40;30m 
+ping localhost -n 2 >nul
+ping localhost -n 2 >nul
+cls
+echo [40;35mPlease wait... logging in as Root [40;37m[[40;35m/[40;37m]
+echo [42;37m [40;30m 
+ping localhost -n 2 >nul
+cls
+echo [40;35mPlease wait... logging in as Root [40;37m[[40;35m-[40;37m]
+echo [42;37m [40;30m 
+ping localhost -n 1 >nul
+cls
+echo [40;35mPlease wait... logging in as Root [40;37m[[40;35m/[40;37m]
+echo [42;37m [40;30m 
+ping localhost -n 1 >nul
+cls
+echo [40;35mPlease wait... logging in as Root [40;37m[[40;35m-[40;37m]
+echo [42;37m [40;30m 
+ping localhost -n 1 >nul
+goto main
+:main
+cls
+set /a bots1=(%Random%%%9)+1
+set /a bots2=(%Random%%%8)+1
+set /a bots3=(%Random%%%7)+1
+set /a bots4=(%Random%%%6)+1
+set /a bots5=(%Random%%%9)+1
+color 5
+title D O X E D
+echo.
+echo                              ╔╦╗┌─┐─┐ ┬  ╔╦╗┌─┐┌─┐┬  
+echo                               ║║│ │┌┴┬┘   ║ │ ││ ││  
+echo                              ═╩╝└─┘┴ └─   ╩ └─┘└─┘┴─┘
+echo                     ╔══════════════════════════════════════════╗  
+echo                     ║                 Welcome                  ║
+echo                     ║               Dox Tool v1                ║
+echo                     ╚══════════════════════════════════════════╝
+echo.
+echo.
+echo                   ╔═══════════════════════════════════════════════╗
+echo                   ║1] Doxbin   ║    ║Doxing Websites ║     ║0 ║ H ║
+echo                   ║            ║    ╚════════════════╝     ╚═ ║ o ║
+echo                   ║2]Dox Save  ║                              ║ w ║
+echo                   ║════════════╝ [6] Whitepages               ║   ║
+echo                   ║3] IP Lookup║══════════════════            ║ T ║
+echo                   ║            ║ [7] cyberbackgroundchecks    ║ o ║
+echo                   ║4] IP Pinger║══════════════════            ║   ║
+echo                   ║            ║ [8] advancedbackgroundchecks ║ D ║
+echo                   ║5] Dox Info ║══════════════════            ║ o ║
+echo                   ║            ║ [9] smartbackgroundchecks    ║ x ║
+echo                   ╚═══════════════════════════════════════════════╝
+echo                    Made By Lunaa#6423║ 10 Exit ║
+echo                                      ╚═════════╝
+echo.
+set /p main= %User%@Doxxed:
+if %main% == 0 start https://www.reddit.com/r/HowToHack/comments/3ssyyd/how_i_dox/
+if %main% == 1 start https://doxbin.org/
+if %main% == 2 start DoxSave.txt
+if %main% == 3 start Demon_Lookup (1).exe
+if %main% == 4 start IP Pinger V7 by RavelCros_Cro.bat
+if %main% == 5 start DoxxingInfo.txt
+if %main% == 6 start https://www.whitepages.com/search/FindPerson
+if %main% == 7 start https://www.cyberbackgroundchecks.com/
+if %main% == 8 start https://www.advancedbackgroundchecks.com/
+if %main% == 9 start https://www.smartbackgroundchecks.com/
+if %main% == 10 exit
+goto menu
+
+
+
+
+:Pinger
+title Mai San Pinger / [Beta]
+echo off
+color c 
+:greeting
+chcp 65001
+cls
+echo ██████╗ ██╗███╗   ██╗ ██████╗ ███████╗██████╗ 
+echo ██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝██╔══██╗
+echo ██████╔╝██║██╔██╗ ██║██║  ███╗█████╗  ██████╔╝
+echo ██╔═══╝ ██║██║╚██╗██║██║   ██║██╔══╝  ██╔══██╗
+echo ██║     ██║██║ ╚████║╚██████╔╝███████╗██║  ██║
+echo ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+set /p IP=Enter IP:
+:rainbow
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+ 
+color 01
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 02
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 03
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 04
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 05
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 06
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 07
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 08
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 09
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 0a
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 0b
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 0c
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...) 
+ping -t 2 0 10 127.0.0.1 >nul
+color 0d
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 0e
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+color 0f
+PING -n 1 %IP% | FIND "TTL="
+IF ERRORLEVEL 1 (SET in=c & echo offline...)
+ping -t 2 0 10 127.0.0.1 >nul
+goto rainbow
+
+
+
+
+:DDoss
+@echo off
+color F
+echo I am not held accountable for any Goverment Trouble
+echo Also Please use a VPN
+title Denial of Server-Attack 
+echo.
+echo Welcome To Luna Network DDOs Tool
+echo.
+echo Please Enter A Host IP
+echo.
+set /p m=Host:
+echo.
+set /p n=Packet Size:
+echo.
+set /p p=Port:
+color A
+:DDos2
+chcp 65001
+cls
+echo ████████╗██████╗  ██████╗ ██╗     ██╗     ███████╗██████╗ 
+echo ╚══██╔══╝██╔══██╗██╔═══██╗██║     ██║     ██╔════╝██╔══██╗
+echo    ██║   ██████╔╝██║   ██║██║     ██║     █████╗  ██║  ██║
+echo    ██║   ██╔══██╗██║   ██║██║     ██║     ██╔══╝  ██║  ██║
+echo    ██║   ██║  ██║╚██████╔╝███████╗███████╗███████╗██████╔╝
+echo    ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═════╝ 
+echo Attacking %m% with %n% Packets using port %p%
+ping %m% 198.154.62.190 199.231.186.150 -1 %n% -t >nul
+pause 
+goto DDos2
+pause >nul
+
+
+
+
+
+:IPLook
+@echo off
+title IP Lookup
+color 0A
+mode con lines=13 cols=70
+setlocal ENABLEDELAYEDEXPANSION
+set webclient=webclient
+if exist "%temp%\%webclient%.vbs" del "%temp%\%webclient%.vbs" /f /q /s >nul
+if exist "%temp%\response.txt" del "%temp%\response.txt" /f /q /s >nul
+:IPLOOKUP
+cls
+echo Coded by Lunaa#6423
+echo.
+echo.
+echo                       What would you like to do?
+echo.
+echo                            View your IP: (1)
+echo.
+echo                            Lookup an IP: (2)
+echo.
+echo.
+echo.
+goto action
+:input
+echo.
+echo Please enter a valid input option.
+echo.
+:action
+echo.
+set /p action=Type your choice. 1,2: 
+if '%action%'=='1' echo sUrl = "http://ipinfo.io/json" > %temp%\%webclient%.vbs & goto localip
+if '%action%'=='2' goto iplookup
+goto input
+:iplookup
+cls
+echo.
+echo                          Type an IP to lookup
+echo.
+set ip=127.0.0.1
+set /p ip=IP: 
+echo sUrl = "http://ipinfo.io/%ip%/json" > %temp%\%webclient%.vbs
+:localip
+cls
+echo set oHTTP = CreateObject("MSXML2.ServerXMLHTTP.6.0") >> %temp%\%webclient%.vbs
+echo oHTTP.open "GET", sUrl,false >> %temp%\%webclient%.vbs
+echo oHTTP.setRequestHeader "Content-Type", "application/x-www-form-urlencoded" >> %temp%\%webclient%.vbs
+echo oHTTP.setRequestHeader "Content-Length", Len(sRequest) >> %temp%\%webclient%.vbs
+echo oHTTP.send sRequest >> %temp%\%webclient%.vbs
+echo HTTPGET = oHTTP.responseText >> %temp%\%webclient%.vbs
+echo strDirectory = "%temp%\response.txt" >> %temp%\%webclient%.vbs
+echo set objFSO = CreateObject("Scripting.FileSystemObject") >> %temp%\%webclient%.vbs
+echo set objFile = objFSO.CreateTextFile(strDirectory) >> %temp%\%webclient%.vbs
+echo objFile.Write(HTTPGET) >> %temp%\%webclient%.vbs
+echo objFile.Close >> %temp%\%webclient%.vbs
+echo Wscript.Quit >> %temp%\%webclient%.vbs
+start %temp%\%webclient%.vbs
+set /a requests=0
+echo.
+rem echo Waiting for API response. . .
+echo  Looking up IP Address. . .
+:checkresponseexists
+set /a requests=%requests% + 1
+if %requests% gtr 7 goto failed
+IF EXIST "%temp%\response.txt" (
+goto response_exist
+) ELSE (
+ping 127.0.0.1 -n 2 -w 1000 >nul
+goto checkresponseexists
+)
+:failed
+taskkill /f /im wscript.exe >nul
+del "%temp%\%webclient%.vbs" /f /q /s >nul
+echo.
+echo Did not receive a response from the API.
+echo.
+pause
+goto IPLOOKUP
+:response_exist
+cls
+echo.
+for /f "delims=     " %%i in ('findstr /i "," %temp%\response.txt') do (
+    set data=%%i
+    set data=!data:,=!
+    set data=!data:""=Not Listed!
+    set data=!data:"=!
+    set data=!data:ip:=IP:      !
+    set data=!data:hostname:=Hostname:  !
+    set data=!data:org:=ISP:        !
+    set data=!data:city:=City:      !
+    set data=!data:region:=State:   !
+    set data=!data:country:=Country:    !
+    set data=!data:postal:=Postal:  !
+    set data=!data:loc:=Location:   !
+    set data=!data:timezone:=Timezone:  !
+    echo !data!
+)
+echo.
+del "%temp%\%webclient%.vbs" /f /q /s >nul
+del "%temp%\response.txt" /f /q /s >nul
+pause
+if '%ip%'=='' goto IPLOOKUP
+goto iplookup
+
+
+
+
+:help
+@echo off
+chcp 65001 >nul
+title Mai San / Help Page [Beta]
+cls
+color 04
+echo                   ╔═══════════════════════════════════════════════╗
+echo                   ║1] Discord  ║    ║   Help Page    ║     ║0 ║ H ║
+echo                   ║            ║    ╚════════════════╝     ╚═ ║ e ║
+echo                   ║2]Email     ║                              ║ l ║
+echo                   ║════════════╝ [6] discord.gg/mR5N8F8K      ║ p ║
+echo                   ║3] Lunaa    ║══════════════════            ║   ║
+echo                   ║            ║ [7] LunaaPanel@gmail.com     ║ C ║
+echo                   ║4] LunaVPN  ║══════════════════            ║ o ║
+echo                   ║            ║ [8] 740-352-7055             ║ n ║
+echo                   ║5] Lunaa    ║══════════════════            ║ t ║
+echo                   ║            ║ [9] lunanetwork.site.bm/     ║ a ║
+echo                   ╚═══════════════════════════════════════════════╝
+pause 
+goto menu
+
+
+:toothblue
+chcp 65001 >nul
+title Mai San / BlueTooth Menu [Beta]
+color 03
+echo =======================================
+echo 1-Search Hidden BlueTooth Devices
+echo 2-Search Public BlueTooth Devices 
+echo =======================================
+set /p btserach= MaiSan@BlueTooth:
+if %btserach% == 1 goto Bluetoothload
+if %btserach% == 2 goto Bluetoothload
+
+:Bluetoothload
+@echo off
+chcp 65001 >nul
+title Mai San / BlueTooth Loading [Beta]
+cls
+color 04
+echo ===========================================
+echo Loading...
+pause >nul
+echo Loading...
+pause >nul
+echo Loading...
+pause >nul
+echo Searching Network...
+pause >nul
+echo Searching Bluetooth Networks...
+pause >nul
+echo Checking OS System
+pause >nul
+echo Checking Finished 
+pause >nul
+echo Done Loading...
+echo ===========================================
+pause >nul
+goto HiddenSearch
+
+//Fake Stuff
+
+:HiddenSearch
+@echo off
+chcp 65001 >nul
+title Mai San / Bluetooth search [Beta]
+cls
+color 06
+echo [ DEL ] Device 58:C8:48:16:1E:88 58-C8-48-16-1E-88
+echo [ DEL ] Device 4A:F6:E7:98:AA:79 4A-F6-E7-98-AA-79
+echo [ CHG ] Device 42:02:91:DE:B9:40 RSSI: -90
+echo [ CHG ] Device 48:C6:9F:9D:78:F8 RSSI: -90
+echo [ CHG ] Device 5E:3A:1C:00:4B:0B RSSI: -91
+echo [ CHG ] Device 4F:6E:9A:20:8F:CC RSSI: -76
+echo [ CHG ] Device 5E:3A:1C:00:4B:0B RSSI: -86
+echo [ CHG ] Device 66:61:B7:E1:F2:BF ManufacturerData Key: 0x004c
+echo [ CHG ] Device 66:61:B7:E1:F2:BF ManufacturerData Value: Error
+echo [ CHG ] Device 4F:6E:9A:20:8F:CC RSSI: -80
+echo [ CHG ] Device 4E:C2:DE:09:F5:31 RSSI: -96
+echo [ NEW ] Device 4C:3C:90:71:B2:BD 4C-3C-90-71-B2-BD
+echo [ CHG ] Device 66:61:B7:E1:F2:BF TxPower: 12
+echo [ CHG ] Device 66:61:B7:E1:F2:BF ManufacturerData Key: 0x004c
+echo [ CHG ] Device 66:61:B7:E1:F2:BF ManufacturerData Value: Error
+echo [ CHG ] Device 48:C6:9F:9D:78:F8 RSSI: -100
+echo [ CHG ] Device 4F:6E:9A:20:8F:CC RSSI: -83
+echo [ CHG ] Device 5F:A7:A7:A1:74:93 RSSI: -89
+echo [ CHG ] Device 5E:3A:1C:00:4B:0B RSSI: -92
+echo    =================================
+echo         Finished Searching...
+echo    =================================
+echo.
+pause >nul
+goto menu
+
+
+:password
+@echo off
+chcp 65001 >nul
+title Mai San / WiFi Search [Beta]
+cls
+color 07
+echo.
+echo =================
+echo  Beta may not work
+echo ==================
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+color 02
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo.
+echo ===============
+echo Password's Found
+echo ===============
+echo ERROR please Contact Lunaa#6423 
+echo This Problem only occurs when a Device is not connected to the WiFi 
+echo or Device is Timing out with The Scripts 
+echo.
+pause
+goto menu
+
+//Real stuff
+
+:fbileak
+@echo off
+chcp 65001 >nul
+title Mai San / FBI.Gov Accounts  [Beta]
+cls
+color 04
+echo.
+start https://pastebin.com/HMm8pu9h
+echo.
+pause
+goto menu
